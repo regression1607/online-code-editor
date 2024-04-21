@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-200 min-h-screen flex flex-col items-center justify-center">
+    <h1 class="text-center text-7xl font-bold mb-10 jacquard-24-regular">Real-time Code Editor</h1>
+    <form action="/index" method="POST" class="bg-white p-6 rounded shadow w-1/2">
+        <label for="name" class="block mb-2 text-sm font-medium text-gray-600">Enter your name:</label>
+        <input type="text" id="name" name="name" required class="block w-full p-2 border rounded mb-4">
+        <input type="submit" value="Enter" class="w-full p-2 text-white bg-blue-500 rounded hover:bg-blue-600">
+    </form>
+</body>
+</html>
