@@ -8,9 +8,12 @@ const server = http.createServer(app);
 const io = socketIO(server);
 const axios = require('axios');
 const shell = require('shelljs');
+const path = require('path');
 require('dotenv').config();
 // Set EJS as view engine
 app.set('view engine', 'ejs');
+// Set the views directory
+app.set('views', path.join(__dirname, 'views'));
 
 // Serve static files from the "public" directory
 app.use(express.static('public'));
